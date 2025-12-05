@@ -4,7 +4,7 @@ import os
 
 # --- Nastavení ---
 URL = "https://www.reservio.cz/b/psychosomaticka-pece/booking?step=2&serviceId=1f6c9687-412e-4fe1-9413-26fd378af0cc"
-CHECK_DATE = "28. 11."
+CHECK_DATE = "11. 12."
 BOT_TOKEN = os.environ.get("BOT_TOKEN")
 CHAT_ID = os.environ.get("CHAT_ID")
 
@@ -31,3 +31,4 @@ if __name__ == "__main__":
         send_telegram_message(f"🟢 Uvolnil se termín {CHECK_DATE} u Hany Salačové!\n{URL}")
     else:
         print("Zatím nic volného.")
+
